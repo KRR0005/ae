@@ -1,0 +1,21 @@
+def count_len(s):
+  if s =="":
+    return 0
+  else:
+    return 1 + count_len(s[1:])
+s='hello world'
+result=count_len(s)
+print(f"the result is {result}")
+
+
+
+def find_smallest(lst):
+  if len(lst)==1:
+    return lst[0]
+  else:
+    smallest=find_smallest(lst[1:])
+    return smallest if smallest< lst[0] else lst[0]
+
+lst=(4,7,20,5,8,3)
+result=find_smallest(lst)
+print(f'the smallest is {result}')
