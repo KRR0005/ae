@@ -1,0 +1,7 @@
+import re
+n=input("enter gmail")
+m=re.fullmatch("[a-zA-Z0-9._]*@gmail[.]com",n)
+if m!=None:
+  print("valid")
+else:
+  print("invalid")
