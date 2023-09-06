@@ -1,0 +1,25 @@
+class person:
+  def __init__(self,usn,name,dob,gender):
+    self.usn=usn
+    self.name=name
+    self.dob=dob
+    self.gender=gender
+
+class student(person):
+  def __init__(self,usn,name,dob,gender,marks,attendence):
+    super().__init__(usn,name,dob,gender)
+    self.marks=marks
+    self.attendence=attendence
+
+class marksattendence:
+  def __init__(self,marks,attendence):
+    self.marks=marks
+    self.attendence=attendence
+
+s=student("1nt21ai032","keshav","3-6-2003","M",85,95)
+print("name",s.name)
+print("usn",s.usn)
+print("dob",s.dob)
+print("marks",s.marks)
+print("attendence",s.attendence)
+print("gender",s.gender)
