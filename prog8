@@ -1,0 +1,18 @@
+class rectangle:
+  def __init__(self,width,height,c_x,c_y):
+    self.width=width
+    self.height=height
+    self.c_x=c_x
+    self.c_y=c_y
+  def get_center(self):
+    c_x=self.c_x+ self.width/2
+    c_y=self.c_y+ self.height/2
+    return c_x,c_y
+  def get_area(self):
+    return self.height*self.width
+
+  def get_peri(self):
+    return 2*(self.height + self.width)
+
+rect=rectangle(5,10,0,0)
+center=rect.get_center()
