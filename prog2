@@ -1,0 +1,10 @@
+def count_strings(lst):
+  count=0
+  for s in lst:
+    if len(s)>=2 and s[0]==s[-1]:
+      count+=1
+  return count
+
+string=('racecar','madam','civic','giraffe','home')
+result=count_strings(string)
+print(f"the no of strings are {result}")
