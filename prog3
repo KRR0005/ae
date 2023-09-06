@@ -1,0 +1,9 @@
+def dup_sort(sentence):
+  words=sentence.split()
+  uniquewords=set(words)
+  s_words=sorted(list(uniquewords))
+  return ' '.join(s_words)
+
+sentence=input('enter sentence')
+result=dup_sort(sentence)
+print(f"teh result is {result}")
